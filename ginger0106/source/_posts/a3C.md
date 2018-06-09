@@ -1,3 +1,13 @@
+---
+layout: post
+title: "A3C (asynchronous advantage actor-critic)"
+date: 2018-6-9 23:36
+comments: true
+tags: 
+	- RL
+	- 算法
+	- ML
+---
 
 # A3C  (asynchronous advantage actor-critic)
 
