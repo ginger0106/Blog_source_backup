@@ -17,8 +17,8 @@ whereas off-policy methods evaluate or improve a policy different from that used
 
 - off-policy：Q-learning, Deterministic policy gradient
 
-![](20170519163048350.png)
-![](20170519163105163.png)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/35231674.jpg)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/96174817.jpg)
 
 # 2. Value-based RL & Policy-based RL 
 
@@ -53,7 +53,7 @@ $$ \pi_\theta(s,a)= P[a | s,\theta]$$
   - Learnt Value Function
   - Learnt Policy
 
-![](微信截图_20180327192508.png)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/31700400.jpg)
 
 ##  Policy-Based RL
 
@@ -84,8 +84,8 @@ $$ \pi_\theta(s,a)= P[a | s,\theta]$$
 
 如何来优化这个目标？ 我们采用随即梯度算法来解决。
 
-![](v2-0fa08f58272318395211d77e2d86324a_hd.jpg)
-![](v2-5f27280b38ce8418ad941c2449a392f0_r.jpg)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/16343231.jpg)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/58209890.jpg)
 >所以，现在我们得到所有形式的目标函数所对应的策略梯度是一样的，注意这里有两个部分组成，一个是策略函数的log形式，一个是引导奖励(score function)。第一部分是参数化直接得到的，第二部分可以直接用即时奖励来计算，也可以用值函数近似，也就是AC算法。
 
 ## Policy Function
@@ -96,7 +96,7 @@ $$ \pi_\theta(s,a)= P[a | s,\theta]$$
 ## Score Function
 根据Score Function的不同，对应不同的算法。如下图：
 
-![](v2-f605bbc28abc33edbc20a12e673911f6_hd.jpg)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/88031244.jpg)
 
 - Monte-Carlo Policy Gradient (REINFORCE)
 Using return vt as an unbiased sample of $Q^{\pi_\theta}(s_t, a_t)$ 
@@ -120,7 +120,7 @@ $$ Q_w(s,a)\approx Q^{\pi_\theta}(s, a)$$
  
  >可以明显看出，Critic做的事情其实是我们已经见过的：策略评估，他要告诉个体，在由参数 $\theta$ 确定的策略 $\pi_{\theta}$ 到底表现得怎么样。关于策略评估我们之前讲过，可以使用蒙特卡洛策略评估、TD学习以及TD(λ)等方式实现
  
-![AC](v2-fee178d141c219be512dc4cd9f6090c2_hd.jpg)
+![AC](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/45370982.jpg)
  
 > 在这个例子当中，我们只是用了线性的函数来估计Q，当然目前都是神经网络来计算了。另外，REINFORCE和Q AC有high variance的问题。因此有了如下的改进算法。
 
@@ -132,7 +132,7 @@ $$ A(s,a)= Q_w(s,a)-V_v(s,a)$$
 ![](微信截图_20180327224706.png)
 
 ##  Training
-![](v2-91bddf251749e4fe2cd9a8f3e1202d8a_hd.jpg)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/10566688.jpg)
 
 如上图：我们说AC结合了 Policy Gradient (Actor) 和 Function Approximation (Critic) 的方法. Actor 基于概率选行为, Critic 基于 Actor 的行为评判行为的得分, Actor 根据 Critic 的评分修改选行为的概率。
 
@@ -149,7 +149,7 @@ DQN比传统RL算法有了巨大提升其中一个主要原因就是使用了经
 ## Advantage
 相比DQN算法，A3C算法不需要使用经验池来存储历史样本并随机抽取训练来打乱数据相关性，节约了存储空间，并且采用异步训练，大大加倍了数据的采样速度，也因此提升了训练速度。与此同时，采用多个不同训练环境采集样本，样本的分布更加均匀，更有利于神经网络的训练。
 
-![](WX20171026-222351@2x.png)
+![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/42121203.jpg)
 
 
 # 5. Example 
@@ -486,6 +486,3 @@ env_test.run()
 
 
 
-```python
-
-```
