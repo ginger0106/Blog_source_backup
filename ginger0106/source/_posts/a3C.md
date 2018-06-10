@@ -3,16 +3,20 @@ layout: post
 title: "A3C (asynchronous advantage actor-critic)"
 date: 2018-6-9 23:36
 comments: true
+mathjax: true
 tags: 
 	- RL
 	- 算法
 	- ML
 ---
 
-# A3C  (asynchronous advantage actor-critic)
+
 
 >Mnih V, Badia A P, Mirza M, et al. Asynchronous methods for deep reinforcement learning[C]//International Conference on Machine Learning. 2016: 1928-1937.
 2016 ICML
+
+<!--more-->
+
 
 # 1. on-policy& off-policy
 Sutton的书RL an introduction edition 2. 在5.4节 Monte Carlo Control without Exploring starts中，作者定义了on-policy与off-policy:
@@ -35,13 +39,14 @@ whereas off-policy methods evaluate or improve a policy different from that used
 
 ## Def
 
-- **Value-based： ** A policy is generated from value function:
+- **Value-based**  A policy is generated from value function:
+
 $$ V_\theta (s)= V^\pi(s) $$
 $$ Q_\theta (s,a)= Q^\pi(s,a)$$
 
 > 我们用线性非线性的方式对值函数进行逼近求解
 
-- **Policy-based RL： **Directly parametrise the policy: 
+- **Policy-based RL：**Directly parametrise the policy: 
 $$ \pi_\theta(s,a)= P[a | s,\theta]$$
  The output is a probability. 
  
@@ -96,6 +101,8 @@ $$ \pi_\theta(s,a)= P[a | s,\theta]$$
 
 ![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/16343231.jpg)
 ![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/58209890.jpg)
+
+
 >所以，现在我们得到所有形式的目标函数所对应的策略梯度是一样的，注意这里有两个部分组成，一个是策略函数的log形式，一个是引导奖励(score function)。第一部分是参数化直接得到的，第二部分可以直接用即时奖励来计算，也可以用值函数近似，也就是AC算法。
 
 ## Policy Function
@@ -136,6 +143,7 @@ $$ Q_w(s,a)\approx Q^{\pi_\theta}(s, a)$$
 
 ## Advantage Actor-Critic 
 - advantage function
+
 $$ V_v(s,a)\approx V^{\pi_\theta}(s, a)$$ 
 $$ Q_w(s,a)\approx Q^{\pi_\theta}(s, a)$$ 
 $$ A(s,a)= Q_w(s,a)-V_v(s,a)$$
@@ -489,10 +497,10 @@ env_test.run()
 
 1. <https://zhuanlan.zhihu.com/p/32438022>
 2. David Silver ppt
-3. https://www.youtube.com/watch?v=O79Ic8XBzvw 
-4. https://zhuanlan.zhihu.com/p/32596470
-5. http://pemami4911.github.io/blog/2016/08/21/ddpg-rl.html
-6. http://karpathy.github.io/2016/05/31/rl/
+3. <https://www.youtube.com/watch?v=O79Ic8XBzvw >
+4. <https://zhuanlan.zhihu.com/p/32596470>
+5. <http://pemami4911.github.io/blog/2016/08/21/ddpg-rl.html>
+6. <http://karpathy.github.io/2016/05/31/rl/>
 
 
 
