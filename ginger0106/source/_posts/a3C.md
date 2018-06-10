@@ -26,7 +26,7 @@ whereas off-policy methods evaluate or improve a policy different from that used
 
 一句话解释：其实就是只有一句话: 更新值函数时是否只使用当前策略所产生的样本. 
 
-![](https://github.com/ginger0106/Blog_source_backup/blob/master/ginger0106/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20180327205214.png)
+![微信截图_20180327205214.png](https://i.loli.net/2018/06/10/5b1cdc64f34fd.png)
 - on-policy：REINFORCE, TRPO, SARSA
 
 - off-policy：Q-learning, Deterministic policy gradient
@@ -147,7 +147,8 @@ $$ Q_w(s,a)\approx Q^{\pi_\theta}(s, a)$$
 $$ V_v(s,a)\approx V^{\pi_\theta}(s, a)$$ 
 $$ Q_w(s,a)\approx Q^{\pi_\theta}(s, a)$$ 
 $$ A(s,a)= Q_w(s,a)-V_v(s,a)$$
-![](https://github.com/ginger0106/Blog_source_backup/blob/master/ginger0106/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20180327224706.png)
+![微信截图_20180327224706.png](https://i.loli.net/2018/06/10/5b1cdc646a112.png)
+
 
 ##  Training
 ![](http://jiantuku-image-ginger.oss-cn-beijing.aliyuncs.com/18-6-9/10566688.jpg)
@@ -163,7 +164,7 @@ $$ A(s,a)= Q_w(s,a)-V_v(s,a)$$
 ## Asynchronous
 
 DQN比传统RL算法有了巨大提升其中一个主要原因就是使用了经验回放的技巧。然而，打破数据的相关性，经验回放并非是唯一的方法。另外一种方法是**异步**的方法（异步的方法是指数据并非同时产生）
-![](https://github.com/ginger0106/Blog_source_backup/blob/master/ginger0106/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20180328102925.png)
+![微信截图_20180328102925.png](https://i.loli.net/2018/06/10/5b1cdc6473164.png)
 ## Advantage
 相比DQN算法，A3C算法不需要使用经验池来存储历史样本并随机抽取训练来打乱数据相关性，节约了存储空间，并且采用异步训练，大大加倍了数据的采样速度，也因此提升了训练速度。与此同时，采用多个不同训练环境采集样本，样本的分布更加均匀，更有利于神经网络的训练。
 
