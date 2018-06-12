@@ -7,7 +7,7 @@ tags:
 	- 随笔
 ---
 
-![hug](http://pa5o7mbqo.bkt.clouddn.com/blog/180612/HffdFeAich.jpg?imageslim)
+![Hug](http://pa5o7mbqo.bkt.clouddn.com/blog/180612/8icL7221EK.jpg?imageslim)
 
 <!--more-->
 
