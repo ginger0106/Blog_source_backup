@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""Optimization theory of life 4""
+title: "Optimization theory of life 4"
 date: 2018-6-13 18:40
 comments: true
 tags: 
