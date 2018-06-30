@@ -3,6 +3,7 @@ layout: post
 title: "Hug"
 date: 2018-6-12 12:32
 comments: true
+reward: true
 tags: 
 	- 随笔
 ---

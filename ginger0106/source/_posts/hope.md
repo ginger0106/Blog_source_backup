@@ -3,9 +3,11 @@ layout: post
 title: "Optimization theory of life 4"
 date: 2018-6-13 18:40
 comments: true
+reward: true
 tags: 
 	- 随笔
 ---
+
 ## 美好生活的集体想象
 
 ![SEX AND CITY](http://pa5o7mbqo.bkt.clouddn.com/blog/180613/fLf68GJ540.jpg?imageslim)

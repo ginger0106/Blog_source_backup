@@ -3,6 +3,7 @@ layout: post
 title: "厦门之旅"
 date: 2018-6-10 16:10
 comments: true
+reward: true
 tags: 
 	- 随笔
 	- travelling

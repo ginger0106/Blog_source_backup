@@ -3,6 +3,7 @@ layout: post
 title: "Blog 配置"
 date: 2018-6-11 12:39
 comments: true
+reward: true
 tags: 
 	- 技术
 ---

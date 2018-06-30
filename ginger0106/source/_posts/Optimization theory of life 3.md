@@ -3,6 +3,7 @@ layout: post
 title: "Optimization theory of life 3"
 date: 2018-6-9 17:33
 comments: true
+reward: true
 tags: 
 	- 随笔
 ---

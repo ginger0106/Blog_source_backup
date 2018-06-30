@@ -4,6 +4,7 @@ title: "A3C (asynchronous advantage actor-critic)"
 date: 2018-6-9 23:36
 comments: true
 mathjax: true
+reward: true
 tags: 
 	- RL
 	- 算法

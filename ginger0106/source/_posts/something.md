@@ -3,11 +3,13 @@ layout: post
 title: "学霸？"
 date: 2018-6-16 10:14
 comments: true
+reward: true
 tags: 
 	- 随笔
 ---
 
 ![mark](http://pa5o7mbqo.bkt.clouddn.com/blog/180616/iHa07CG5Dm.png?imageslim)
+
 <!--more-->
 
 ## 学渣沉浮录
